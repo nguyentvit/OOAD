@@ -10,6 +10,10 @@ public class View extends JFrame{
 		JButton btnNewButton = new JButton("New button");
 		btnNewButton.setBounds(86, 73, 89, 23);
 		getContentPane().add(btnNewButton);
+		
+		JButton btnNewButton_1 = new JButton("New button");
+		btnNewButton_1.setBounds(217, 73, 89, 23);
+		getContentPane().add(btnNewButton_1);
 	}
 	public void ShowWindow()
 	{
