@@ -1,5 +1,6 @@
 package View;
 
+import java.awt.BorderLayout;
 import java.awt.Container;
 import java.awt.EventQueue;
 
@@ -19,7 +20,10 @@ import com.toedter.calendar.JDateChooser;
 import com.toedter.calendar.JDayChooser;
 import javax.swing.JButton;
 import java.awt.Font;
+import java.awt.event.ActionEvent;
+
 import javax.swing.DefaultComboBoxModel;
+import java.awt.event.ActionListener;
 
 public class Appt extends JFrame {
 
@@ -27,7 +31,6 @@ public class Appt extends JFrame {
 	private JTextField textField;
 	private JTextField textField_1;
 
-	
 	public Appt() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 562, 413);
@@ -57,7 +60,7 @@ public class Appt extends JFrame {
 		
 		JComboBox comboBox = new JComboBox();
 		comboBox.setModel(new DefaultComboBoxModel(new String[] {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23"}));
-		comboBox.setBounds(331, 223, 113, 21);
+		comboBox.setBounds(331, 260, 113, 21);
 		contentPane.add(comboBox);
 		
 		JCheckBox chckbxNewCheckBox = new JCheckBox("All Day");
@@ -67,7 +70,7 @@ public class Appt extends JFrame {
 		//float [] items = { "12.00", "12.", "Third item", "Fourth item" };
 		JComboBox comboBox_1 = new JComboBox();
 		comboBox_1.setModel(new DefaultComboBoxModel(new String[] {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23"}));
-		comboBox_1.setBounds(331, 178, 113, 21);
+		comboBox_1.setBounds(331, 223, 113, 21);
 		contentPane.add(comboBox_1);
 		//String [] items = { "First item", "Second item", "Third item", "Fourth item" };
 
@@ -101,6 +104,20 @@ public class Appt extends JFrame {
 		lblNewLabel_2.setFont(new Font("Tahoma", Font.BOLD, 15));
 		lblNewLabel_2.setBounds(214, 57, 113, 33);
 		contentPane.add(lblNewLabel_2);
+		
+		JButton btnInvitePeople = new JButton("Invite people");
+		btnInvitePeople.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				 System.out.println("TEST");
+			       Invite window2 = new Invite();
+			       window2.setVisible(true);
+			       //getContentPane().add(btnInvitePeople, BorderLayout.CENTER);
+			       //pack();
+			}
+			
+		});
+		btnInvitePeople.setBounds(359, 165, 85, 39);
+		contentPane.add(btnInvitePeople);
 		
 
 	}

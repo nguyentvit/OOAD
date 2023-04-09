@@ -4,7 +4,8 @@ import java.sql.Connection;
 import java.sql.SQLException;
 
 import KetNoiCSDL.ConnectionDB;
-import View.Appt;
+//import View.Appt;
+import View.Calendar;
 
 public class Main {
 
@@ -13,7 +14,7 @@ public class Main {
 		if(conn != null)
 		{
 			System.out.print("hello");
-			Appt ui = new Appt();
+			Calendar ui = new Calendar();
 			ui.ShowWindow();
 		}
 
