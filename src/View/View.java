@@ -10,13 +10,17 @@ public class View extends JFrame{
 		getContentPane().setLayout(null);
 		
 		JButton btnNewButton = new JButton("New button");
-		btnNewButton.setBounds(86, 73, 89, 23);
+		btnNewButton.setBounds(230, 122, 89, 23);
 		getContentPane().add(btnNewButton);
 		
 		textField = new JTextField();
-		textField.setBounds(63, 167, 96, 19);
+		textField.setBounds(159, 234, 96, 19);
 		getContentPane().add(textField);
 		textField.setColumns(10);
+		
+		JButton btnNewButton_1 = new JButton("New button");
+		btnNewButton_1.setBounds(80, 81, 85, 21);
+		getContentPane().add(btnNewButton_1);
 	}
 	public void ShowWindow()
 	{

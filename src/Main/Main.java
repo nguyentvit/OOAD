@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 
 import KetNoiCSDL.ConnectionDB;
-import View.View;
+import View.Appt;
 
 public class Main {
 
@@ -13,7 +13,7 @@ public class Main {
 		if(conn != null)
 		{
 			System.out.print("hello");
-			View ui = new View();
+			Appt ui = new Appt();
 			ui.ShowWindow();
 		}
 
