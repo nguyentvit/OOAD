@@ -18,7 +18,7 @@ public class View extends JFrame{
 	public View() {
 		getContentPane().setLayout(null);
 		
-		btnXacNhan = new JButton("Xác nh?n");
+		btnXacNhan = new JButton("Xác nhận");
 		
 		
 		btnXacNhan.setBounds(245, 270, 89, 23);
@@ -38,11 +38,11 @@ public class View extends JFrame{
 		cbbTimeEnd.setBounds(433, 55, 82, 21);
 		getContentPane().add(cbbTimeEnd);
 		
-		JLabel lblNewLabel = new JLabel("Th?i gian b?t d?u:");
+		JLabel lblNewLabel = new JLabel("Thời gian bắt đầu:");
 		lblNewLabel.setBounds(311, 14, 110, 13);
 		getContentPane().add(lblNewLabel);
 		
-		JLabel lblNewLabel_1 = new JLabel("Th?i gian k?t thúc:");
+		JLabel lblNewLabel_1 = new JLabel("Thời gian kết thúc:");
 		lblNewLabel_1.setBounds(311, 59, 112, 13);
 		getContentPane().add(lblNewLabel_1);
 		AddEvents();
@@ -58,7 +58,7 @@ public class View extends JFrame{
 				int timeEnd = Integer.parseInt(cbbTimeEnd.getSelectedItem().toString());
 				if(timeStart > timeEnd)
 				{
-					JOptionPane.showMessageDialog(null, "Th?i gian không h?p l?","Thông báo",JOptionPane.INFORMATION_MESSAGE);
+					JOptionPane.showMessageDialog(null, "Thời gian không hợp lệ","Thông báo",JOptionPane.INFORMATION_MESSAGE);
 					
 				}
 				else {
